@@ -15,10 +15,16 @@
 
   <body>
     <!--Header-->
-    <header>
-      <h1 id="logo">Logo</h1>
+    <header id="main-header">
+      <div>
+        <img
+          id="logo"
+          src="resources/pngwing.com.png"
+          alt="A hand decorated with the Malaysian flag"
+        />
+      </div>
       <nav>
-        <ul>
+        <ul id="menu-navigation">
           <li>
             <a href="">About Malaysia</a>
           </li>
@@ -33,9 +39,10 @@
     </header>
 
     <main>
-      <!--Big Image-->
+      <!--Hero Image-->
       <figure>
         <img
+          id="hero-image"
           src="resources/esmonde-yong--9B08uduMyY-unsplash.jpg"
           alt="Sunset view of the Petronas Twin Towers (KLCC) in Kuala Lumpur"
         />
@@ -55,6 +62,8 @@
 
       <!--Sidebar-->
       <aside>
+        Filter by
+        <br />
         <label for="location">Location</label>
         <br />
         <select name="location" id="location" style="font-family: 'Lato'">
@@ -79,130 +88,131 @@
 
       <!--Main content-->
       <h1>Popular Destinations</h1>
-      <article>
-        <figure>
-          <img
-            src="resources/malaysia-4175331_1280.jpg"
-            alt="Cable cars overlooking green mountains and blue waters"
-          />
-          <figcaption>
-            Image by
-            <a
-              href="https://pixabay.com/users/404_pixels-12312624/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
-              >parth yadav</a
-            >
-            from
-            <a
-              href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
-              >Pixabay</a
-            >
-          </figcaption>
-        </figure>
-        <header>
-          <h2>Langkawi Island</h2>
-          <h3>Kedah</h3>
-        </header>
-        <main>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Necessitatibus sit quisquam id illum perferendis? Natus repellendus
-          repudiandae veniam error, nesciunt quas dolore facere unde ut qui
-          itaque exercitationem cum nisi.
-        </main>
-      </article>
-      <article>
-        <figure>
-          <img
-            src="resources/malaysia-4175331_1280.jpg"
-            alt="Cable cars overlooking green mountains and blue waters"
-          />
-          <figcaption>
-            Image by
-            <a
-              href="https://pixabay.com/users/404_pixels-12312624/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
-              >parth yadav</a
-            >
-            from
-            <a
-              href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
-              >Pixabay</a
-            >
-          </figcaption>
-        </figure>
-        <header>
-          <h2>Langkawi Island</h2>
-          <h3>Kedah</h3>
-        </header>
-        <main>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Necessitatibus sit quisquam id illum perferendis? Natus repellendus
-          repudiandae veniam error, nesciunt quas dolore facere unde ut qui
-          itaque exercitationem cum nisi.
-        </main>
-      </article>
-
-      <article>
-        <figure>
-          <img
-            src="resources/malaysia-4175331_1280.jpg"
-            alt="Cable cars overlooking green mountains and blue waters"
-          />
-          <figcaption>
-            Image by
-            <a
-              href="https://pixabay.com/users/404_pixels-12312624/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
-              >parth yadav</a
-            >
-            from
-            <a
-              href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
-              >Pixabay</a
-            >
-          </figcaption>
-        </figure>
-        <header>
-          <h2>Langkawi Island</h2>
-          <h3>Kedah</h3>
-        </header>
-        <main>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Necessitatibus sit quisquam id illum perferendis? Natus repellendus
-          repudiandae veniam error, nesciunt quas dolore facere unde ut qui
-          itaque exercitationem cum nisi.
-        </main>
-      </article>
-
-      <article>
-        <figure>
-          <img
-            src="resources/malaysia-4175331_1280.jpg"
-            alt="Cable cars overlooking green mountains and blue waters"
-          />
-          <figcaption>
-            Image by
-            <a
-              href="https://pixabay.com/users/404_pixels-12312624/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
-              >parth yadav</a
-            >
-            from
-            <a
-              href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
-              >Pixabay</a
-            >
-          </figcaption>
-        </figure>
-        <header>
-          <h2>Langkawi Island</h2>
-          <h3>Kedah</h3>
-        </header>
-        <main>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Necessitatibus sit quisquam id illum perferendis? Natus repellendus
-          repudiandae veniam error, nesciunt quas dolore facere unde ut qui
-          itaque exercitationem cum nisi.
-        </main>
-      </article>
+      <div id="main-content">
+        <article>
+          <figure>
+            <img
+              class="article-image"
+              src="resources/malaysia-4175331_1280.jpg"
+              alt="Cable cars overlooking green mountains and blue waters"
+            />
+            <figcaption>
+              Image by
+              <a
+                href="https://pixabay.com/users/404_pixels-12312624/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
+                >parth yadav</a
+              >
+              from
+              <a
+                href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
+                >Pixabay</a
+              >
+            </figcaption>
+          </figure>
+          <header>
+            <h2>Langkawi Island</h2>
+            <h3>Kedah</h3>
+          </header>
+          <main>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Necessitatibus sit quisquam id illum perferendis? Natus repellendus
+            repudiandae veniam error, nesciunt quas dolore facere unde ut qui
+            itaque exercitationem cum nisi.
+          </main>
+        </article>
+        <article>
+          <figure>
+            <img
+              src="resources/malaysia-4175331_1280.jpg"
+              alt="Cable cars overlooking green mountains and blue waters"
+            />
+            <figcaption>
+              Image by
+              <a
+                href="https://pixabay.com/users/404_pixels-12312624/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
+                >parth yadav</a
+              >
+              from
+              <a
+                href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
+                >Pixabay</a
+              >
+            </figcaption>
+          </figure>
+          <header>
+            <h2>Langkawi Island</h2>
+            <h3>Kedah</h3>
+          </header>
+          <main>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Necessitatibus sit quisquam id illum perferendis? Natus repellendus
+            repudiandae veniam error, nesciunt quas dolore facere unde ut qui
+            itaque exercitationem cum nisi.
+          </main>
+        </article>
+        <article>
+          <figure>
+            <img
+              src="resources/malaysia-4175331_1280.jpg"
+              alt="Cable cars overlooking green mountains and blue waters"
+            />
+            <figcaption>
+              Image by
+              <a
+                href="https://pixabay.com/users/404_pixels-12312624/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
+                >parth yadav</a
+              >
+              from
+              <a
+                href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
+                >Pixabay</a
+              >
+            </figcaption>
+          </figure>
+          <header>
+            <h2>Langkawi Island</h2>
+            <h3>Kedah</h3>
+          </header>
+          <main>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Necessitatibus sit quisquam id illum perferendis? Natus repellendus
+            repudiandae veniam error, nesciunt quas dolore facere unde ut qui
+            itaque exercitationem cum nisi.
+          </main>
+        </article>
+        <article>
+          <figure>
+            <img
+              src="resources/malaysia-4175331_1280.jpg"
+              alt="Cable cars overlooking green mountains and blue waters"
+            />
+            <figcaption>
+              Image by
+              <a
+                href="https://pixabay.com/users/404_pixels-12312624/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
+                >parth yadav</a
+              >
+              from
+              <a
+                href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4175331"
+                >Pixabay</a
+              >
+            </figcaption>
+          </figure>
+          <header>
+            <h2>Langkawi Island</h2>
+            <h3>Kedah</h3>
+          </header>
+          <main>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Necessitatibus sit quisquam id illum perferendis? Natus repellendus
+            repudiandae veniam error, nesciunt quas dolore facere unde ut qui
+            itaque exercitationem cum nisi.
+          </main>
+        </article>
+      </div>
     </main>
 
-    <footer>&copy; Ardini</footer>
+    <footer>&copy; Ardini Salihan</footer>
   </body>
 </html>
