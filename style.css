@@ -39,6 +39,7 @@ li > a {
   text-decoration: none;
   color: white;
   padding: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 figure {
@@ -49,18 +50,17 @@ figure {
 
 #hero-image {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 750px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .hero-text {
   position: absolute;
-  bottom: 8vh;
-  left: 5vw;
+  bottom: 2vh;
+  left: 1vw;
   color: white;
-  font-size: 5vw;
-  font-style: oblique;
-  font-weight: bold;
+  font-size: 3.5vw;
 }
 
 img {
@@ -78,25 +78,19 @@ figcaption > a {
   color: black;
 }
 
-aside {
-  margin: 30px;
-}
-
-select > option {
-  font-family: "Lato", sans-serif;
-  font-size: medium;
-}
-
 h1 {
+  font-family: "Poppins", sans-serif;
   margin: 30px;
 }
 
 h2 {
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 15px 0 0 0;
 }
 
 h3 {
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0 0 5px 0;
 }
@@ -123,6 +117,17 @@ article {
   padding: 15px;
   transition: transform 0.2s;
 }
+figure {
+  width: 100%;
+}
+
+article > figure > img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  object-position: top;
+}
 
 article:hover {
   transform: scale(1.05);
@@ -145,7 +150,11 @@ article:hover {
 
 .main-images {
   position: relative;
+  display: inline-block;
   margin: 10px;
+}
+
+.main-images img {
   opacity: 0;
   animation: fadeIn 1s ease forwards;
   transform: translateY(100px);
@@ -187,20 +196,41 @@ article:hover {
 }
 
 .image-text {
+  font-family: "Poppins", sans-serif;
   position: absolute;
-  bottom: 50px;
-  left: 50px;
+  bottom: 5%;
+  left: 5%;
   color: white;
   font-weight: bold;
   text-align: center;
-}
-
-#whats-on {
-  display: flex;
+  text-shadow: 3px 3px 3px #3d3d3d;
 }
 
 #key-events {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#key-events > h1 {
+  margin: 50px 30px 10px 30px;
+}
+
+#event-dates {
   display: flex;
+}
+
+aside {
+  margin: 30px;
+}
+
+select > option {
+  font-family: "Lato", sans-serif;
+  font-size: medium;
+}
+
+#event-dates {
+  overflow: hidden;
 }
 
 footer {
